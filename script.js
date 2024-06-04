@@ -9,7 +9,7 @@ let selected = "";
 buttons.forEach((btn) => {
  btn.addEventListener("click", (e) => {
   removeSelectedClasses();
-  selected = e.target.textContent;
+  selected = e.target.textContent; //e.target to refer to the element that triggered the event (in this case, the button)
   e.target.classList.add("selected");
  });
 });
